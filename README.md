@@ -8,7 +8,7 @@
 2. Specify how many employees are getting coffee (7 in this scenario but the program can get more employees)
 3. Enter the employee's information one by one in the following format:
    > [Name] [Favorite Drink] [Drink's price] [number of times paid for coffee] (seperate each item with a white space)
-The program will return output after entering all necessary information
+<br>The program will return output after entering all necessary information
 <br>
 Alternativelly, we can also use a textfile to enter the information:
 <br> i.e)
