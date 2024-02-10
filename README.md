@@ -19,3 +19,6 @@ The program will return output after entering all necessary information
 - The program will assume that the number of employees provided by user is accurate
 - The number of times an employee paid for coffee is a positive integer
 - The input format is correct 
+
+## How do the program decide who to pay
+The program takes 'number of times the employee have paid for coffee' and 'the cost of their favorite coffee' as input and calculate their priority in paying the coffee based on those parameters. The more expensive the employee's favorite coffee is, the higher priority the program will put them in. However, if they have already paid for coffee in the past, the program will put them in a lower priority so everyone can take turn paying. 
