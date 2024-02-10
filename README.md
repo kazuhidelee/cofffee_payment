@@ -3,6 +3,9 @@
 <br>Having a hard time deciding who's turn is it to pay for coffee? Try this algorithm ;)
 <br>Given an array of employees and their information, the algorithm will help you decide which employee should pay for coffee.
 
+## Idea
+When we are deciding who should pay for the coffe, what kind of things do we usually consider? Personally, I would first consider the number of times they have already paid for coffee since it would be fair for the person who have never paid or paid less times to pay for coffee. Also, we would consider how much money did each person cost, and I would likely pick the person who's coffee costs the most since it will cost them less money to pay for the whole group than other people. Hence, I designed my algorithm accordingly. 
+
 ## How to run the program
 1. Run the executable
 2. Specify how many employees are getting coffee (7 in this scenario but the program can take more employees)
