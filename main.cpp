@@ -6,10 +6,11 @@
 #include <getopt.h>
 #include <queue>
 using namespace std;
-
+// TODO: Implement -h -p flags
 class coffee_payment
 {
 public:
+	void get_options(int argc, char **argv);
 	void run();
 	void print_stats();
 
@@ -21,7 +22,40 @@ private:
 	int num_people = 0;
 	double total_price = 0;
 	priority_queue<employee_priority, vector<employee_priority>, employee_comparator> pq;
+	bool s_flag = false;
 };
+
+// reading the flag arguments
+void coffee_payment::get_options(int argc, char **argv)
+{
+	int option_index = 0, option = 0;
+
+	opterr = false;
+
+	struct option longOpts[] = {{"help", no_argument, nullptr, 'h'},
+								{"stats", no_argument, nullptr, 's'},
+								{nullptr, 0, nullptr, '\0'}};
+
+	while ((option = getopt_long(argc, argv, "qshb:e:o:clp", longOpts, &option_index)) != -1)
+	{
+		switch (option)
+		{
+		case 'h':
+			cout << "The program will ask you about the following information:\n"
+				 << "Total number of employees\n"
+				 << "For employee, [employee's name] [employee's favorite coffee] [the cost of the coffee(without $ sign)] [number of times they have paid for coffee]"
+				 << "(please seperate each information with a white space in between)";
+			break;
+
+		case 's':
+			s_flag = true;
+			break;
+
+			cerr << "Error: invalid option" << endl;
+			exit(1);
+		}
+	}
+}
 
 //	function to read in employee's info
 void coffee_payment::read_info()
@@ -64,6 +98,7 @@ void coffee_payment::get_result()
 	cout << "Thank you " << people[pay.indx].name << "!\n";
 }
 
+// function to print the specific priorities of employees
 void coffee_payment::print_stats()
 {
 	employee_priority pay;
@@ -82,12 +117,16 @@ void coffee_payment::run()
 	read_info();
 	calc_priority();
 	get_result();
-	print_stats();
+	if (s_flag)
+	{
+		print_stats();
+	}
 }
 
-int main()
+int main(int argc, char **argv)
 {
 	coffee_payment c;
+	c.get_options(argc, argv);
 	c.run();
 	return 0;
 }
