@@ -61,7 +61,7 @@ void coffee_payment::get_options(int argc, char **argv)
 void coffee_payment::read_info()
 {
 	employee temp;
-	cout << "\nPlease enter the total number of employees\n";
+	cout << "\nPlease enter the total number of employees: \n";
 	cin >> num_people;
 	for (size_t i = 0; i < num_people; ++i)
 	{
