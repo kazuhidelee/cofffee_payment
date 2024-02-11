@@ -7,10 +7,13 @@
 When we are deciding who should pay for the coffe, what kind of things do we usually consider? Personally, I would first consider the number of times they have already paid for coffee since it would be fair for the person who have never paid or paid less times to pay for coffee. Also, we would consider how much money did each person cost, and I would likely pick the person who's coffee costs the most since it will cost them less money to pay for the whole group than other people. Hence, I designed my algorithm accordingly. 
 
 ## How to run the program
-1. Run the executable
+1. Comple and run the executable
+<br>```make ```, ```./main.exe```
 2. Specify how many employees are getting coffee (7 in this scenario but the program can take more employees)
-3. Enter the employee's information one by one in the following format:
+<br>> Please enter the total number of employees: 
+4. Enter the employee's information one by one in the following format:
    > [Name] [Favorite Drink] [Drink's price] [number of times paid for coffee] (seperate each item with a white space)
+<br>> i.e) Bob cappuccino 6 0
    
 The program will return output after entering all necessary information
 <br>
