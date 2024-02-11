@@ -19,9 +19,9 @@ The program will return output after entering all necessary information
 <img width="301" alt="Screenshot 2024-02-10 at 12 21 19 AM" src="https://github.com/kazuhidelee/cofffee_payment/assets/122251831/9cc4d9c3-fa79-455e-bb75-f0b272b0aebe">
  <br>```./main.exe < test1.txt ```
 <br>
-You can also activate optional command line flags:
-```./main.exe -h ```: program will print out a help message to inform users about the program usage
-```./main.exe -s ```: program will print out specfic statistics/priority calculated for each employee
+<br>You can also activate optional command line flags:
+<br>```./main.exe -h ```: program will print out a help message to inform users about the program usage
+<br>```./main.exe -s ```: program will print out specfic statistics/priority calculated for each employee
 
 ## Assumptions
 - The program will assume that the number of employees provided by user is accurate
