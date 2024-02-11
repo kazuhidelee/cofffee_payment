@@ -10,10 +10,10 @@ When we are deciding who should pay for the coffe, what kind of things do we usu
 1. Comple and run the executable
 <br>```make ```, ```./main.exe```
 2. Specify how many employees are getting coffee (7 in this scenario but the program can take more employees)
-> Please enter the total number of employees: 
-4. Enter the employee's information one by one in the following format:
+   > Please enter the total number of employees: 7
+3. Enter the employee's information one by one in the following format:
    > [Name] [Favorite Drink] [Drink's price] [number of times paid for coffee] (seperate each item with a white space)
-> i.e) Bob cappuccino 6 0
+   > i.e) Bob cappuccino 6 0
    
 The program will return output after entering all necessary information
 <br>
