@@ -44,7 +44,7 @@ void coffee_payment::get_options(int argc, char **argv)
 			cout << "The program will ask you about the following information:\n"
 				 << "Total number of employees\n"
 				 << "For employee, [employee's name] [employee's favorite coffee] [the cost of the coffee(without $ sign)] [number of times they have paid for coffee]"
-				 << "(please seperate each information with a white space in between)";
+				 << "(please seperate each information with a white space in between)\n";
 			break;
 
 		case 's':
@@ -61,12 +61,12 @@ void coffee_payment::get_options(int argc, char **argv)
 void coffee_payment::read_info()
 {
 	employee temp;
-	cout << "please enter the total number of employees\n";
+	cout << "\nPlease enter the total number of employees\n";
 	cin >> num_people;
 	for (size_t i = 0; i < num_people; ++i)
 	{
 		cout << "Please enter the employee's information in the format and seperate items by space:"
-			 << "[Name] [Favorite Drink] [Drink's price] [number of times paid for coffee] \n";
+			 << " [Name] [Favorite Drink] [Drink's price] [number of times paid for coffee] \n";
 		cin >> temp.name;
 		cin >> temp.favoriteDrink;
 		cin >> temp.drinkPrice;
