@@ -15,7 +15,7 @@ When we are deciding who should pay for the coffe, what kind of things do we usu
 The program will return output after entering all necessary information
 <br>
 <br>Alternativelly, we can also use a textfile to enter the information:
-<br> i.e)
+<br> i.e) ```./main.exe < [TEXTFILE] ```
 <img width="301" alt="Screenshot 2024-02-10 at 12 21 19 AM" src="https://github.com/kazuhidelee/cofffee_payment/assets/122251831/9cc4d9c3-fa79-455e-bb75-f0b272b0aebe">
 
 ## Assumptions
