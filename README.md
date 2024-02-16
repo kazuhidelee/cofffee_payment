@@ -22,8 +22,8 @@ The program will return output after entering all necessary information
  <br>```./main.exe < test1.txt ```
 <br>
 <br>We can also activate optional command line flags:
-<br>```./main.exe -h ```: program will print out a help message to inform users about the program usage
-<br>```./main.exe -s ```: program will print out specfic statistics/priority calculated for each employee
+<br>```./main.exe -h ``` or ```./main.exe --help ```: program will print out a help message to inform users about the program usage
+<br>```./main.exe -s ``` or ```./main.exe --stats ```: program will print out specfic statistics/priority calculated for each employee
 
 ## Assumptions
 - The program will assume that the number of employees provided by user is accurate
@@ -31,4 +31,5 @@ The program will return output after entering all necessary information
 - The input format is correct 
 
 ## How do the program decide who to pay
-The program takes 'number of times the employee have paid for coffee' and 'the cost of their favorite coffee' as input and calculate their priority in paying the coffee based on those parameters. The more expensive the employee's favorite coffee is, the higher priority the program will put them in. However, if they have already paid for coffee in the past, the program will put them in a lower priority so everyone can take turn paying. 
+The program takes 'number of times the employee have paid for coffee' and 'the cost of their favorite coffee' as input and calculate their priority in paying the coffee based on those parameters. The more expensive the employee's favorite coffee is, the higher priority the program will put them in. However, if they have already paid for coffee in the past, the program will put them in a lower priority so everyone can take turn paying.<br>
+In the case when two or more employees' calculated priority are equal, the program will choose a random employee to put into higher priority. (Used C++ random library)
