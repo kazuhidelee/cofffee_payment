@@ -32,4 +32,4 @@ The program will return output after entering all necessary information
 
 ## How do the program decide who to pay
 The program takes 'number of times the employee have paid for coffee' and 'the cost of their favorite coffee' as input and calculate their priority in paying the coffee based on those parameters. The more expensive the employee's favorite coffee is, the higher priority the program will put them in. However, if they have already paid for coffee in the past, the program will put them in a lower priority so everyone can take turn paying.<br>
-In the case when two or more employees' calculated priority are equal, the program will choose a random employee to put into higher priority. (Used C++ random library)
+In the case when two or more employees' calculated priority are equal, the program will choose a random employee among them to put into higher priority. (Used C++ random library)
